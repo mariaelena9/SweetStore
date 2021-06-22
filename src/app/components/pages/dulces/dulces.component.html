@@ -1,0 +1,68 @@
+<div class="jumbotron text-center">
+  <h1>SweetStore</h1>
+  <p class="eslogan">
+    Te ofrecemos una gama de productos selectos.
+  </p>
+</div>
+
+<section id="dulces" class="mt-4">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-xs-12 col-sm-6 col-md-4"
+        *ngFor="
+          let dulce of dulces
+        "
+      >
+        <div class="card_book">
+          <div class="card text-black bg-light">
+            <img
+              class="card-img-top"
+              src="{{ dulce.imagen_presentacion }}"
+              alt="{{ dulce.codigo }}"
+            />
+            <div class="card-img-overlay">
+              <p class="badge badge-warning">
+                {{ dulce.codigo }}
+              </p>
+            </div>
+            <p class="badge badge-warning">
+              Calidad: <strong>{{ dulce.categoria }}</strong>
+            </p>
+            <div class="card-body text-center">
+              <h4 class="card-title">
+                {{dulce.nombre}} {{dulce.marca}} ({{dulce.piezas}} piezas)
+              </h4>
+              <br>
+              <h2>
+                ${{dulce.precio}} mxn
+              </h2>
+              <p class="card-text">
+                {{ dulce.descripcion }}
+              </p>
+              <button
+              data-toggle="modal"
+              data-target="#modalReserva"
+              (click)="onPreUpdateDulce(dulce)"
+              class="btn btn-success">
+                Reservar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="card text-center">
+  <div class="card-header">
+    FiFood
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">¿No encontraste lo que buscabas?</h5>
+    <p class="card-text">
+      Tenemos mas productos para ti, solo visita alguna de nuestras sucursales.
+    </p>
+    <a href="#" class="btn btn-dark" routerLink="/contacto">Agendar cita</a>
+  </div>
+</div>
