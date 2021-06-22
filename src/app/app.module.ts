@@ -24,6 +24,8 @@ import { FilterPipe } from './pipes/filter.pipe';
 
 import { FilterListPipe } from './pipes/filter-list.pipe';
 import { FilterListTPipe } from './pipes/filter-list-t.pipe';
+import { ContactComponent } from './components/pages/contact/contact.component';
+import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +41,9 @@ import { FilterListTPipe } from './pipes/filter-list-t.pipe';
     ListDulcesComponent,
     FilterPipe,
     FilterListPipe,
-    FilterListTPipe
+    FilterListTPipe,
+    ContactComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

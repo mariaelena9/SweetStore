@@ -3,9 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './components/forms/login/login.component';
 import { MainComponent } from './components/pages/main/main.component';
 import { ClientRegisterComponent } from './components/forms/client-register/client-register.component';
-import { ForgotPasswordComponent } from './components/forms/forgot-password/forgot-password.component';
 import { DulcesComponent } from './components/pages/dulces/dulces.component';
 import { ListDulcesComponent } from './components/list-dulces/list-dulces.component';
+import {AboutUsComponent} from './components/pages/about-us/about-us.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
 const routes: Routes = [
   {
     path: '',
@@ -24,12 +25,16 @@ const routes: Routes = [
     component: ListDulcesComponent
   },
   {
-    path: 'dulces',
-    component: DulcesComponent
+    path: 'contacto',
+    component: ContactComponent
   },
   {
-    path: 'recuperar-contrasena',
-    component: ForgotPasswordComponent
+    path: 'sobre-nosotros',
+    component: AboutUsComponent
+  },
+  {
+    path: 'dulces',
+    component: DulcesComponent
   },
   {
     path: '**',

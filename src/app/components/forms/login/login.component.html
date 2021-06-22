@@ -19,16 +19,13 @@
       formControlName="password"
     />
   </div>
-  <button type="submit" class="btn btn-primary btn-lg btn-block">
+  <button type="submit" class="btn btn-lg btn-block">
     Ingresar
   </button>
-  <button class="btn btn-lg btn-google mt-2" (click)="onGoogleLogin()">
+  <!-- <button class="btn btn-lg btn-google mt-2" (click)="onGoogleLogin()">
     Iniciar sesión con Google
-  </button>
+  </button> -->
   <div class="text-center">
-    <a [routerLink]="['/registrarse']">¿No tienes cuenta?, Registrate</a>
-    <a [routerLink]="['/recuperar-contrasena']" class="ml-4"
-      >¿Olvidaste tu contraseña?</a
-    >
+    <a [routerLink]="['/registro']">¿No tienes cuenta?, Registrate</a>
   </div>
 </form>

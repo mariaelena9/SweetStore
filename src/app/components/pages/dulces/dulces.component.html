@@ -22,30 +22,27 @@
               alt="{{ dulce.codigo }}"
             />
             <div class="card-img-overlay">
-              <p class="badge badge-warning">
+              <p class="badge badge-danger">
                 {{ dulce.codigo }}
               </p>
             </div>
             <p class="badge badge-warning">
-              Calidad: <strong>{{ dulce.categoria }}</strong>
+              Categoría: <strong>{{ dulce.categoria }}</strong>
             </p>
             <div class="card-body text-center">
-              <h4 class="card-title">
+              <h5 class="card-title">
                 {{dulce.nombre}} {{dulce.marca}} ({{dulce.piezas}} piezas)
-              </h4>
-              <br>
-              <h2>
+              </h5>
+              <h5>
                 ${{dulce.precio}} mxn
-              </h2>
+              </h5>
               <p class="card-text">
                 {{ dulce.descripcion }}
               </p>
               <button
-              data-toggle="modal"
-              data-target="#modalReserva"
-              (click)="onPreUpdateDulce(dulce)"
+              [routerLink]="['/contacto']"
               class="btn btn-success">
-                Reservar
+                Comprar
               </button>
             </div>
           </div>

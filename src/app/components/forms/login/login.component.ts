@@ -31,9 +31,7 @@ export class LoginComponent implements OnInit {
       const user = await this.authSvc.login(email, password);
       if (user) {
         this.router.navigate(['']);
-      }// else if (user) {
-      //   this.router.navigate(['/confirmacion']);
-      // } 
+      }
       else {
         alert("Usuario no registrado o datos incorrectos")
       }

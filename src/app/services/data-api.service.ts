@@ -27,7 +27,7 @@ export class DataApiService {
   }
   //Dulces*************************************************
   addDulces(dulce: DulcesInterface): void {   
-    dulce.Id=null; 
+    // dulce.Id=null; 
     this.dulcesCollection.add(dulce);    
   }
   getAllDulces() {
