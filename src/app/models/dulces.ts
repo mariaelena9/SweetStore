@@ -6,6 +6,6 @@ export interface DulcesInterface {
     descripcion?: string;
     piezas?: string;
     marca?: string;
-    precio?: any;
+    precio?: string;
     Id?: any;
 }

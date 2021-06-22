@@ -26,8 +26,9 @@ export class DataApiService {
   ngOnInit() {
   }
   //Dulces*************************************************
-  addDulces(dulce: DulcesInterface): void {
-    this.dulcesCollection.add(dulce);
+  addDulces(dulce: DulcesInterface): void {   
+    dulce.Id=null; 
+    this.dulcesCollection.add(dulce);    
   }
   getAllDulces() {
     return this.dulces = this.dulcesCollection.snapshotChanges()

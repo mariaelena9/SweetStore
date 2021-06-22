@@ -32,20 +32,16 @@ export class ModaldulcesComponent implements OnInit {
   onSaveDulce(dulceForm: NgForm): void {
     if (dulceForm.value.Id == null) {
       // New 
-      console.log("prueba 1");
-      
+      console.log("s2");
       dulceForm.value.correo_registro = this.userCorreo;
-      console.log("prueba 2");
+      console.log(dulceForm.value);
+      
       this.dataApi.addDulces(dulceForm.value);
-      console.log("prueba 3");
     } else {
       // Update
       this.dataApi.updateDulces(dulceForm.value);
     }
     dulceForm.resetForm();
     this.btnClose.nativeElement.click();
-  }
-  onPreUpdateDulce(dulce: DulcesInterface) {
-    this.dataApi.selectedDulce = Object.assign({}, dulce);
   }
 }
