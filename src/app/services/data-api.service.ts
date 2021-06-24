@@ -3,6 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 import { Observable } from 'rxjs/internal/Observable';
 import { DulcesInterface } from '../models/dulces';
 import { map } from 'rxjs/operators';
+import { firestore } from 'firebase/app';'firebase/firestore';
 
 @Injectable({
   providedIn: 'root'

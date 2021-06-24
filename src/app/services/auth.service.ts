@@ -4,6 +4,7 @@ import { auth } from 'firebase/app';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { User } from 'firebase';
 import { map } from 'rxjs/operators';
+
 @Injectable()
 export class AuthService {
   constructor(public afAuth: AngularFireAuth) { }
